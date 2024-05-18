@@ -6,7 +6,7 @@ const BASE_URL = 'http://www.omdbapi.com/';
 export const fetchMovies = createAsyncThunk('movies/fetchMovies', async (query) => {
   const response = await fetch(`${BASE_URL}?s=${query}&apikey=${API_KEY}`);
   const data = await response.json();
-  return data.Search;
+  return data.Search; 
 });
 
 const moviesSlice = createSlice({
@@ -15,17 +15,19 @@ const moviesSlice = createSlice({
     list: [],
     status: null,
   },
-  extraReducers: {
-    [fetchMovies.pending]: (state) => {
-      state.status = 'loading';
-    },
-    [fetchMovies.fulfilled]: (state, { payload }) => {
-      state.list = payload;
-      state.status = 'succeeded';
-    },
-    [fetchMovies.rejected]: (state) => {
-      state.status = 'failed';
-    },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchMovies.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchMovies.fulfilled, (state, action) => {
+        state.list = action.payload;
+        state.status = 'succeeded';
+      })
+      .addCase(fetchMovies.rejected, (state) => {
+        state.status = 'failed';
+      });
   },
 });
 
