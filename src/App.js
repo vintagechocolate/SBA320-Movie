@@ -21,10 +21,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" exact component={Carousel} />
-          <Route path="/movies" component={MovieList} />
-          <Route path="/movie/:id" component={MovieDetails} />
-          <Route path="/watchlist" component={Watchlist} />
+          <Route path="/" element={<Carousel />} />
+          <Route path="/movies" element={<MovieList />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
+          <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
       </div>
     </Router>
