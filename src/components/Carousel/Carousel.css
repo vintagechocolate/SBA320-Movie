@@ -1,0 +1,41 @@
+.carousel {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.carousel h2 {
+  margin-bottom: 1rem;
+}
+
+.carousel-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+}

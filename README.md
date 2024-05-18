@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Movie Mania
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Mania is a web application built with React, Redux Toolkit, and the OMDb API. It allows users to search for movies, view details, and create a watchlist.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- React
+- Redux Toolkit
+- React Router
+- Axios
+- OMDb API
+- HTML/CSS/JavaScript
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Search for movies by title
+- View detailed information about a movie, including plot, cast, ratings, and more
+- Add movies to a personal watchlist
+- Remove movies from the watchlist
+- Responsive design for various devices
+- User-friendly interface with a carousel, tooltips, and a sticky navigation bar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository: `git clone https://github.com/your-username/movie-mania.git`
+2. Install dependencies: `npm install`
+3. Obtain an API key from the OMDb API (http://www.omdbapi.com/)
+4. Create a `.env` file in the project root and add your API key: `REACT_APP_OMDB_API_KEY=your_api_key`
+5. Start the development server: `npm start`
+6. Open the application in your browser at `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Use the search bar to search for movies by title.
+2. Click on a movie from the search results to view its details.
+3. Click the "Add to Watchlist" button to add the movie to your personal watchlist.
+4. Navigate to the "Watchlist" page to view and manage your saved movies.
+5. Explore other features like the carousel for popular movies and tooltips for additional information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Movie Mania application is deployed on Netlify and can be accessed at: [https://movie-mania.netlify.app](https://movie-mania.netlify.app)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Unsolved Problems
 
-### `npm run eject`
+- Implementing user authentication and storing watchlists on a server-side database for persistent storage across devices.
+- Adding social sharing features to allow users to share their watchlists or movie recommendations with friends.
+- Integrating additional APIs or data sources to provide more comprehensive movie information, such as trailers, reviews, and recommendations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,0 +1,22 @@
+.movie-details {
+  text-align: center;
+  padding: 2rem;
+}
+
+.movie-details img {
+  width: 300px;
+  height: auto;
+}
+
+.movie-details button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-details button:hover {
+  background-color: #555;
+}
