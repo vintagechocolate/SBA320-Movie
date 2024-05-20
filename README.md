@@ -1,6 +1,6 @@
 # Movie Mania
 
-Movie Mania is a web application built with React, Redux Toolkit, and the OMDb API. It allows users to search for movies, view details, and create a watchlist.
+Movie is a web application built with React, Redux Toolkit, and the OMDb API. It allows users to search for movies, view details, and create a watchlist.
 
 ## Technologies Used
 
