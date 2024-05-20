@@ -1,4 +1,4 @@
-# Movie Mania
+# Movie
 
 Movie is a web application built with React, Redux Toolkit, and the OMDb API. It allows users to search for movies, view details, and create a watchlist.
 
